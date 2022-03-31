@@ -1,0 +1,21 @@
+[package]
+name = "sys-time"
+version = "0.0.5"
+edition = "2021"
+
+description = """
+Lightweight Date and time library.
+"""
+repository = "https://github.com/kavanmevada/sys-time"
+readme = "README.md"
+keywords = ["date", "time", "calendar", "duration"]
+include = ["src/**/*", "LICENSE-*", "README.md", "!src/tests.rs"]
+
+
+authors = ["Kavan Mevada"]
+license = "Apache-2.0 OR MIT"
+
+[package.metadata.docs.rs]
+all-features = true
+targets = ["x86_64-unknown-linux-gnu"]
+rustdoc-args = ["--cfg", "__time_03_docs"]
